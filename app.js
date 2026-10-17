@@ -37,6 +37,9 @@ function solve() {
     let StoryTitle = document.createElement("p");
     StoryTitle.textContent = `Title: ${storyTitleElement.value}`;
 
+    let StoryGenre = document.createElement("p");
+    StoryGenre.textContent = `Genre: ${document.getElementById("genre").value}`;
+
     let StoryText = document.createElement("p");
     StoryText.textContent = `${storyElement.value}`;
 
@@ -56,6 +59,7 @@ function solve() {
     articleElement.appendChild(fullName);
     articleElement.appendChild(Age);
     articleElement.appendChild(StoryTitle);
+    articleElement.appendChild(StoryGenre);
     articleElement.appendChild(StoryText);
 
     liElement.appendChild(articleElement);
